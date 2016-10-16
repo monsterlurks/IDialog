@@ -1,0 +1,449 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+color: #808082;
+list-style: none;
+font-style:normal;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+width: 100%;
+height: 100%;
+font-family: sans-serif;
+font-style: 1em;
+background-color: #fff;
+line-height: 135%;
+}
+
+a{
+color: #808082;
+text-decoration: none;
+}
+input {
+background: #ebebeb;
+color: #808082;
+border-radius: 13px;
+border: none;
+
+}
+.wrapper, .header_contain {
+width: 50%;
+width: 968px;
+margin-left: 25%;
+margin-right: 25%;
+}
+
+/*Шапка*/
+header {
+height: 120px;
+background-image:url(img/bg.jpg);
+background-position: right bottom;
+background-repeat: no-repeat;
+}
+
+.blue_cover {
+background-color:#0097F4;
+opacity: 0.8;
+position: relative;
+bottom:120px;
+z-index: 1;
+height: 120px;
+}
+.header_contain {
+height: 120px;
+position: relative;
+z-index: 2;
+}
+
+.logo_header_img {
+width: 60px;
+margin-top: 30px;
+float: left;
+}
+
+.logo_title {
+font-size: 3.3em;
+color: #fff;
+width: 200px;
+margin-left: 5px;
+padding-top: 50px;
+float: left;
+}
+
+.logo_btn {
+color: #fff;
+border: 2px solid #fff ;
+padding: 10px;
+border-radius:25px;
+width: 140px;
+display: block;
+float: right;
+text-align: center;
+margin-top: 40px;
+cursor: pointer;
+margin-right: 7px;
+}
+
+/*Навигация слева*/
+nav {
+margin-top: 35px;
+width:19%;
+float: left;
+border-bottom: 1px solid #ebebeb;
+}
+nav ul {
+list-style: none;
+}
+
+nav ul li{
+margin-bottom: 15px;
+width: 15%;
+cursor: pointer;
+text-align: center;
+}
+nav ul li a, .active_btn {
+border: 2px solid #808082;
+padding: 10px;
+border-radius:25px;
+width: 140px;
+display: block;
+}
+.active_btn { /*добавляем через js при клике*/
+border: 2px solid #0097F4 ;
+color: #0097F4;
+}
+
+.drop_menu {
+display: none;
+}
+/*Основной блок*/
+.main {
+float: right;
+width: 80%;
+margin: 35px 0 35px 0;
+border-left: 1px solid #ebebeb;
+}
+
+.block {
+float:left;
+margin-left: 3%;
+width: 30%;
+}
+
+.select {
+position: relative;
+}
+
+ .blocks_select {
+ border-bottom: 1px solid #ebebeb;
+}
+
+.select img {
+position: absolute;
+bottom: 27px;
+left: 206px;
+top: 1px;
+border-radius: 100%;
+cursor: pointer;
+}
+
+.rotate_arrow {
+transform: rotate(-180deg);
+transition: .3s;
+}
+
+.drop_list_close{
+background-color: #ebebeb;
+border-radius:13px;
+padding: 5px 0 0 8px;
+height: 28px;
+}
+
+.block p {
+margin-bottom: 15px;
+}
+
+.drop_list {
+background-color: #ebebeb;
+border-radius:13px;
+margin-top: -20px;
+padding-top: 25px;
+padding-left: 4px;
+display: none;
+}
+.drop_list_display_block {
+display: block;
+}
+
+.drop_list li {
+padding-bottom: 8px;
+padding-left: 5px;
+}
+
+.drop_list li:hover{
+background-color: #cecece;
+cursor:pointer;
+border-radius:8px;
+}
+
+.chosen {
+background-color: #dbdbdb;
+border-radius:8px;
+}
+
+.string {
+height: 1px;
+background: #ebebeb;
+margin-top: 218px;
+margin-left: 20px;
+}
+
+.btn_addemail{
+float: right;
+margin-top: 16px;
+margin-right: 5px;
+width: 220px;
+cursor: pointer;
+height: 26px;
+border-radius: 14px;
+color: #fff;
+background: #0097f4;
+padding: 3px;
+text-align: center;
+}
+
+/*Графики*/
+
+.col_wrap {
+margin-left: 25px;
+margin-top: 25px;
+text-align: center;
+float: left;
+width: 40%;
+}
+
+.col_wrap p {
+margin-bottom: 20px;
+}
+
+.col_img {
+margin-top: 10px;
+}
+
+.form_date {
+height: 30px;
+margin-left: 10px;
+font-size: 1.1em;
+width: 38%;
+padding-left: 10px;
+}
+
+/*Footer*/
+
+footer {
+height: 120px;
+clear: both;
+background: #2C4F62;
+text-align: left;
+padding-top: 50px;
+}
+
+.col_footer_01,.contacts   {
+float: left;
+
+}
+.contacts {
+display: inline-block;
+margin-right: 40px;
+}
+
+address {
+display: inline-block;
+
+}
+.col_footer_02 {
+float: right;
+display: inline-block;
+
+}
+.logo_footer_img {
+width: 50px;
+margin: -10px 10px 0 0;
+float: right;
+}
+
+.col_footer_02 span {
+float: right;
+font-size: 2.5em;
+}
+
+.email, .tel, .tel b, .col_footer_02 span, .col_footer_02 span b, address, address b, .tel  {
+color:#fff;
+}
+
+.drop_menu_for480 {
+display: none;
+}
+
+/* Для телефонов */
+
+@media (max-width: 480px){
+header {
+background: #2C4F62;
+}
+.logo_title {
+font-size: 2.3em;
+width: 30%;
+margin-left: 10px;
+}
+.wrapper, .header_contain {
+max-width: 480px;
+margin-left: 0;
+}
+.header_contain {
+height: 120px;
+margin-left: 10px;
+}
+.logo_btn {
+padding: 5px 5px;
+width: 25%;
+margin-top: 45px;
+margin-right: 70px;
+}
+.main {
+width: 100%;
+border-left: 1px solid #ebebeb;
+}
+nav {
+width: 480px;
+margin:15px 0 0 -10px;
+position: relative;
+}
+
+nav ul li{
+cursor: pointer;
+text-align: center;
+display: inline-block;
+float: left;
+width: 20%;
+margin-left: 20px;
+}
+nav ul li a, .active_btn {
+border: 0px solid #808082;
+width: 100px;
+display: block;
+}
+.drop_menu {
+display: none;
+}
+.block {
+width: 27%;
+margin-left: 22px;
+}
+.btn_addemail {
+margin-right: 45px;
+width: 135px;
+}
+.select img {
+left: 103px;
+}
+.drop_list_open {
+font-size: 0.9em;
+}
+.col_img img {
+width: 200px;
+}
+.form_date {
+width: 43%;
+}
+footer {
+height: 120px;
+padding-top: 0px;
+}
+.contacts, address {
+margin: 30px 20px 0 20px;
+}
+.col_footer_02 span {
+display: none;
+}
+.logo_footer_img {
+margin: 27px 30px 0 0;
+}
+.drop_menu_for480 {
+position: absolute;
+left: 140px;
+top: 35px;
+background-color: #ebebeb;
+padding: 3px 5px 10px 5px;
+border-radius: 10px;
+display: none; /*через js меняем на block*/
+}
+.drop_menu_for480 a{
+display:block;
+margin-top: 3px;
+}
+.drop_menu_for480 a:hover {
+background-color: #cecece;
+cursor:pointer;
+border-radius:8px;
+ }
+}
+/*модальное окно e-mail*/
+.modal {
+background-color: #fff;
+width: 350px;
+position: fixed;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 200px;
+z-index: 4;
+color: #212543;
+text-align: center;
+border-radius: 15px;
+padding: 16px;
+display: none;
+}
+.modal_close {
+position: absolute;
+top: 4px;
+right: 8px;
+border-radius: 100%;
+width: 16px;
+height: 16px;
+font-size: 24px;
+cursor: pointer;
+color: #808082;
+}
+.modal input {
+height: 26px;
+width: 288px;
+padding: 3px 12px;
+margin-top: 10px;
+}
+.modal_btn {
+padding: 0 32px;
+height: 26px;
+border-radius: 13px;
+background: #0097f4;
+color: #fff;
+margin-top: 10px;
+cursor: pointer;
+border:none;
+font-size: 1em;
+}
+/*подложка*/
+.modal_underlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.4);
+z-index: 3;
+display: none;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jquery-ui.min.css">
+    <body>
+    <header>
+        <div class="header_contain">
+            <img alt="" class="logo_header_img" src="img/logo.png"> </img>
+                <p class="logo_title">+1Dialog</p>
+                <a class="logo_btn" href="">Выход </a>
+        </div>
+        <div class="blue_cover"></div>
+    </header>
+    <div class="wrapper">
+<!-- меню -->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Дашборд</a></li>
+                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#">Профиль</a></li>
+                     <li><a href="#"> Поддержка</a></li>
+                     <li class="drop_menu"><a href="#"> Общее</a></li>
+                      <li class="drop_menu"><a href="#">Внешний вид</a></li>
+                    <li class="drop_menu"><a href="#">Доп.настройки</a></li>
+                    <li class="drop_menu"><a href="#">Код виджета</a></li>
+                </ul>
+                <!-- это выпадающее меню для разрешения не более 480px в ширину -->
+                  <div class="drop_menu_for480">
+                        <a href="">Общее</a>
+                        <a href="">Внешний вид</a>
+                        <a href="">Доп. настройки</a>
+                        <a href="">Код виджета</a>
+                    </div>
+               <!-- end -->
+            </nav>
+        </aside>
+<!-- конец меню -->
+<!-- блок справа -->
+ <div class="main">
+               <section>
+                <div class="block">
+                    <p>Статистика по сайту</p>
+                    <div class="select">
+                        <div class="drop_list_close"> Website.com </div>
+                        <img src="img/adu.png"></img>
+                            <ul class="drop_list">
+                                <li class="chosen">Website.com</li>
+                                <li>Another.com</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <p>Переодичность отчетов </p>
+                    <div class="select">
+                        <div class="drop_list_close">Каждый день</div>
+                        <img src="img/adu.png"></img>
+                            <ul class="drop_list">
+                            <li class="chosen">Каждый день</li>
+                            <li>Каждую неделю</li>
+                            <li>Каждый месяц</li>
+                            <li>Не отправлять</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <p>Отправлять отчет на e-mail</p>
+                    <div class="select">
+                        <div class="drop_list_close"></div>
+                        <img src="img/adu.png"></img>
+                    </div>
+                </div>
+                <div class="btn_addemail">Добавить e-mail</div>
+            </section>
+            <div class="modal_underlay"></div>
+            <div class="modal">
+                                <span class="modal_close">ˣ</span>
+                                <p>Введите e-mail для рассылки</p>
+                                <input type="email" name="from" class="validate_input">
+                                <button type="button" class="modal_btn">Добавить</button>
+                            </div>
+            <div class="string"></div>
+ <!-- Графики -->
+    <div class="col_wrap">
+                <p><a href="#">Кол-во уникальных посетителей вашего сайта</a></p>
+                    <input class="form_date" name="from"> </input>
+                    <input class="form_date" name="from"> </input>
+                        <div class="col_img">
+                            <img alt="" src="img/graph.png"/></img>
+                        </div>
+            </div>
+            <div class="col_wrap">
+                <p><a href="#">Кол-во уникальных посетителей вашего сайта</a></p>
+                    <input class="form_date" name="from"> </input>
+                    <input class="form_date" name="from"> </input>
+                        <div class="col_img">
+                            <img alt="" src="img/graph.png"/></img>
+                        </div>
+            </div>
+            <div class="col_wrap">
+                <p><a href="#">Кол-во уникальных посетителей вашего сайта</a></p>
+                    <input class="form_date" name="from"> </input>
+                    <input class="form_date" name="from"> </input>
+                        <div class="col_img">
+                            <img alt="" src="img/graph.png"/></img>
+                        </div>
+            </div>
+             <div class="col_wrap">
+                <p><a href="#">Кол-во уникальных посетителей вашего сайта</a></p>
+                    <input class="form_date" name="from"> </input>
+                    <input class="form_date" name="from"> </input>
+                        <div class="col_img">
+                            <img alt="" src="img/graph.png"/></img>
+                        </div>
+            </div>
+<!-- Графики конец -->
+
+    </div>
+<!-- конец большого блока справа -->
+ </div>
+
+<!-- Footer -->
+<footer>
+    <div class="wrapper">
+        <div class="col_footer_01">
+            <div class="contacts">
+                <div class="tel"><b>8 (078) 654-45-45</b></div>
+                <div class="email"> +1dialog@up.ua</div>
+            </div>
+              <address>г. Беларусь Ул. <br> <b>Первомайская 6/8</b></addres>
+        </div>
+        <div class="col_footer_02">
+            <span><b>+</b>1Dialog </span><img src="img/logo.png" alt="" class = "logo_footer_img">
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<!-- конец footer'a -->
+ </body>
+</html>
