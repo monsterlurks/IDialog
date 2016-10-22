@@ -19,14 +19,14 @@
         <aside>
             <nav>
                 <ul>
-                    <li><a href="#">Дашборд</a></li>
-                    <li><a href="#">Настройки</a></li>
-                    <li><a href="#">Профиль</a></li>
-                     <li><a href="#"> Поддержка</a></li>
-                     <li class="drop_menu"><a href="#"> Общее</a></li>
-                      <li class="drop_menu"><a href="#">Внешний вид</a></li>
-                    <li class="drop_menu"><a href="#">Доп.настройки</a></li>
-                    <li class="drop_menu"><a href="#">Код виджета</a></li>
+                    <li><a href="index.html" class='nav_index'>Дашборд</a></li>
+                    <li><a href="#" class='nav_set'>Настройки</a></li>
+                    <li><a href="#" class='nav_prof'>Профиль</a></li>
+                     <li><a href="#" class='nav_help'> Поддержка</a></li>
+                     <li class="drop_all"><a href="#" class='nav_a'> Общее</a></li>
+                      <li class="drop_view"><a href="#" class='nav_a'>Внешний вид</a></li>
+                    <li class="drop_extr"><a href="#" class='nav_a'>Доп.настройки</a></li>
+                    <li class="drop_code"><a href="#" class='nav_a'>Код виджета</a></li>
                 </ul>
                 <!-- это выпадающее меню для разрешения не более 480px в ширину -->
                   <div class="drop_menu_for480">
@@ -40,6 +40,7 @@
         </aside>
 <!-- конец меню -->
 <!-- блок справа -->
+ <div class="ajax-container" id="ajax-container">
  <div class="main">
                <section>
                 <div class="block">
@@ -121,7 +122,7 @@
     </div>
 <!-- конец большого блока справа -->
  </div>
-
+ </div>
 <!-- Footer -->
 <footer>
     <div class="wrapper">
@@ -141,6 +142,7 @@
 <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" scr="jquery.pjax.js"></script>
 <!-- конец footer'a -->
  </body>
 </html>

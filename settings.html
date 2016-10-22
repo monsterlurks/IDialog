@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jquery-ui.min.css">
+    <body>
+    <header>
+        <div class="header_contain">
+            <img alt="" class="logo_header_img" src="img/logo.png"> </img>
+                <p class="logo_title">+1Dialog</p>
+                <a class="logo_btn" href="">Выход </a>
+        </div>
+        <div class="blue_cover"></div>
+    </header>
+    <div class="wrapper">
+<!-- меню -->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class='nav_index'>Дашборд</a></li>
+                    <li><a href="#" class='nav_set'>Настройки</a></li>
+                    <li><a href="#" class='nav_prof'>Профиль</a></li>
+                     <li><a href="#" class='nav_help'> Поддержка</a></li>
+                     <li class="drop_all"><a href="#" class='nav_a'> Общее</a></li>
+                      <li class="drop_view"><a href="#" class='nav_a'>Внешний вид</a></li>
+                    <li class="drop_extr"><a href="#" class='nav_a'>Доп.настройки</a></li>
+                    <li class="drop_code"><a href="#" class='nav_a'>Код виджета</a></li>
+                </ul>
+                <!-- это выпадающее меню для разрешения не более 480px в ширину -->
+                  <div class="drop_menu_for480">
+                        <a href="">Общее</a>
+                        <a href="">Внешний вид</a>
+                        <a href="">Доп. настройки</a>
+                        <a href="">Код виджета</a>
+                    </div>
+               <!-- end -->
+            </nav>
+        </aside>
+<!-- конец меню -->
+
+<!-- блок настроек -->
+ <div class="ajax-container" id="ajax-container">
+ <div class="main">
+               <section class="sec_01">
+ <div class="sec_block_01-wrap">
+ <p>Список виджетов</p>
+ <div class="sec_block_01">
+ <div class="sec_block_01-drop"></div>
+ <img src="img/adu.png">
+ </div>
+
+ <ul>
+         <li><a href="#">Копировать</a></li>
+         <li><a href="#">Удалить</a></li>
+         <li><a href="#">Редакатировать</a></li>
+         <li><a href="#">Код</a></li>
+         <li><a href="#">Вкл</a></li>
+         <li>/</a></li>
+         <li><a href="#">Выкл</a></li>
+ </ul>
+ </div>
+ </section>
+ <div class="sec_block_02">Добавить виджет</div>
+ <div class="modal_underlay"></div>
+ <div class="modal">
+                                <span class="modal_close">ˣ</span>
+                                <p>Введите адрес сайта</p>
+                                <input type="text" name="from" class="validate_input-widget">
+                                <button type="button" class="modal_btn">Добавить</button>
+                            </div>
+
+<div class="string set-string"></div>
+<section class="sec_02">
+<p class="sec_02-title">Список офисов/отделов</p>
+<div class="sec_02-col01">
+<ul>
+    <li><div class="group">Главный офис</div>
+    <div class="switcher"><div class="switch"></div></div><a href="#" class="edit">Редактировать</a><a href="#" class="del">Удалить</a></li>
+    <li><div class="group">Склад</div>
+    <div class="switcher"><div class="switch"></div></div><a href="#" class="edit">Редактировать</a><a href="#" class="del">Удалить</a></li>
+</ul>
+<div class="sec_02-btn">Добавить</div>
+ <div class="modal_underlay"></div>
+ <div class="modal_addgroup">
+                                <span class="modal_close">ˣ</span>
+                                <p>Введите название офиса/отдела</p>
+                                <input type="text" name="from" class='validate_input-group'>
+                                <button type="button" class="modal_btn-addgroup">Добавить</button>
+                            </div>
+<div class="string set-string"></div>
+</section>
+
+ </div>
+ </div>
+ </div>
+<!-- Footer -->
+<footer>
+    <div class="wrapper">
+        <div class="col_footer_01">
+            <div class="contacts">
+                <div class="tel"><b>8 (078) 654-45-45</b></div>
+                <div class="email"> +1dialog@up.ua</div>
+            </div>
+              <address>г. Беларусь Ул. <br> <b>Первомайская 6/8</b></addres>
+        </div>
+        <div class="col_footer_02">
+            <span><b>+</b>1Dialog </span><img src="img/logo.png" alt="" class = "logo_footer_img">
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" scr="jquery.pjax.js"></script>
+<!-- конец footer'a -->
+ </body>
+</html>

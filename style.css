@@ -91,7 +91,7 @@ margin-right: 7px;
 /*Навигация слева*/
 nav {
 margin-top: 35px;
-width:19%;
+width: 18%;
 float: left;
 border-bottom: 1px solid #ebebeb;
 }
@@ -174,9 +174,6 @@ margin-top: -20px;
 padding-top: 25px;
 padding-left: 4px;
 display: none;
-}
-.drop_list_display_block {
-display: block;
 }
 
 .drop_list li {
@@ -391,9 +388,12 @@ background-color: #cecece;
 cursor:pointer;
 border-radius:8px;
  }
+.sec_block_01-drop {
+max-width: 460px;
+ }
 }
 /*модальное окно e-mail*/
-.modal {
+.modal,.modal_addgroup {
 background-color: #fff;
 width: 350px;
 position: fixed;
@@ -401,7 +401,7 @@ left: 0;
 right: 0;
 margin: 0 auto;
 top: 200px;
-z-index: 4;
+z-index: 12;
 color: #212543;
 text-align: center;
 border-radius: 15px;
@@ -419,13 +419,13 @@ font-size: 24px;
 cursor: pointer;
 color: #808082;
 }
-.modal input {
+.modal input, .modal_addgroup input {
 height: 26px;
 width: 288px;
 padding: 3px 12px;
 margin-top: 10px;
 }
-.modal_btn {
+.modal_btn, .modal_btn-addgroup {
 padding: 0 32px;
 height: 26px;
 border-radius: 13px;
@@ -444,6 +444,125 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.4);
-z-index: 3;
+z-index: 11;
 display: none;
+}
+/*Блок настроек*/
+.sec_block_01-wrap {
+width: 60%;
+float: left;
+position: relative;
+margin-left: 25px;
+}
+.sec_block_01, .sec_block_01-drop {
+background-color: #ebebeb;
+border-radius: 13px;
+padding: 5px 0 0 8px;
+height: 28px;
+position: relative;
+}
+.sec_block_01-drop {
+height: 50px;
+display: none;
+z-index: 10;
+left: -8px;
+width: 101%;
+}
+.sec_01 img {
+position: absolute;
+left: 94%;
+top: 1px;
+border-radius: 100%;
+cursor: pointer;
+z-index: 11;
+}
+.sec_block_02, .sec_02-btn {
+float: right;
+margin:35px 5px 0 0;
+width: 220px;
+cursor: pointer;
+height: 26px;
+border-radius: 14px;
+color: #fff;
+background: #0097f4;
+padding: 3px;
+text-align: center;
+}
+.drop{
+display: block;
+}
+.sec_block_01-wrap p {
+margin: 0 0 15px 6px;
+}
+.sec_block_01-wrap ul li {
+float: left;
+margin: 8px 13px 0 10px;
+font-size: 0.9em;
+}
+.sec_block_01-wrap ul li a:hover,
+.edit:hover, .del:hover {
+color:#0097f4;
+}
+.sec_block_01-wrap ul li:last-child {
+margin-left:  -5px;
+margin-right: 0;
+}
+.sec_block_01-wrap ul li:nth-child(5) {
+margin-left: 10px;
+margin-right: -3px;
+}
+.set-string{
+margin-top: 120px;
+}
+/*вторая секция в настройках*/
+.sec_02-col01 {
+width: 800px;
+}
+.sec_02-title {
+margin: 20px 0 0px 20px;
+}
+.group {
+background-color: #ebebeb;
+border-radius: 13px;
+padding: 5px 0 0 8px;
+height: 28px;
+width: 25%;
+margin: 15px 0 -5px 20px;
+display: inline-block;
+}
+.switcher {
+height: 20px;
+width: 40px;
+background: #808082;
+border-radius: 10px;
+cursor: pointer;
+display: inline-block;
+position: relative;
+top: 2px;
+margin-left: 20px;
+transition-duration:0.3s;
+}
+.switch {
+background: #fff;
+height: 16px;
+width: 16px;
+border-radius: 100%;
+cursor: pointer;
+margin: 2px 0 0 2px;
+transition-duration:0.3s;
+}
+.switch-on {
+margin-left: 22px;
+}
+.switcher-on {
+background: #0097f4;
+}
+.edit, .del{
+position: relative;
+margin-left: 20px;
+}
+.sec_02-btn {
+float: left;
+width: 120px;
+margin: 20px;
 }
