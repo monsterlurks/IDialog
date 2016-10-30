@@ -1,47 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"></meta>
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="jquery-ui.min.css">
-    <body>
-    <header>
-        <div class="header_contain">
-            <img alt="" class="logo_header_img" src="img/logo.png"> </img>
-                <p class="logo_title">+1Dialog</p>
-                <a class="logo_btn" href="">Выход </a>
-        </div>
-        <div class="blue_cover"></div>
-    </header>
-    <div class="wrapper">
-<!-- меню -->
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class='nav_index'>Дашборд</a></li>
-                    <li><a href="#" class='nav_set'>Настройки</a></li>
-                    <li><a href="#" class='nav_prof'>Профиль</a></li>
-                     <li><a href="#" class='nav_help'> Поддержка</a></li>
-                     <li class="drop_all"><a href="#" class='nav_a'> Общее</a></li>
-                      <li class="drop_view"><a href="#" class='nav_a'>Внешний вид</a></li>
-                    <li class="drop_extr"><a href="#" class='nav_a'>Доп.настройки</a></li>
-                    <li class="drop_code"><a href="#" class='nav_a'>Код виджета</a></li>
-                </ul>
-                <!-- это выпадающее меню для разрешения не более 480px в ширину -->
-                  <div class="drop_menu_for480">
-                        <a href="">Общее</a>
-                        <a href="">Внешний вид</a>
-                        <a href="">Доп. настройки</a>
-                        <a href="">Код виджета</a>
-                    </div>
-               <!-- end -->
-            </nav>
-        </aside>
-<!-- конец меню -->
+﻿<!-- блок настроек -->
 
-<!-- блок настроек -->
- <div class="ajax-container" id="ajax-container">
  <div class="main">
                <section class="sec_01">
  <div class="sec_block_01-wrap">
@@ -50,27 +8,25 @@
  <div class="sec_block_01-drop"></div>
  <img src="img/adu.png">
  </div>
-
  <ul>
-         <li><a href="#">Копировать</a></li>
-         <li><a href="#">Удалить</a></li>
-         <li><a href="#">Редакатировать</a></li>
-         <li><a href="#">Код</a></li>
-         <li><a href="#">Вкл</a></li>
-         <li>/</a></li>
-         <li><a href="#">Выкл</a></li>
- </ul>
+   <li><a href="#">Копировать</a></li>
+   <li><a href="#">Удалить</a></li>
+   <li><a href="#">Редакатировать</a></li>
+   <li><a href="#">Код</a></li>
+   <li><a href="#" class="a_on">Вкл</a></li>
+   <li>/</a></li>
+   <li><a href="#" class="a_off">Выкл</a></li>
+</ul>
  </div>
  </section>
- <div class="sec_block_02">Добавить виджет</div>
+ <div class="btn_addemail sec_block_02">Добавить виджет</div>
  <div class="modal_underlay"></div>
  <div class="modal">
-                                <span class="modal_close">ˣ</span>
-                                <p>Введите адрес сайта</p>
-                                <input type="text" name="from" class="validate_input-widget">
-                                <button type="button" class="modal_btn">Добавить</button>
-                            </div>
-
+    <span class="modal_close">ˣ</span>
+    <p>Введите адрес сайта</p>
+    <input type="text" name="from" class="validate_input-widget">
+    <button type="button" class="modal_btn">Добавить</button>
+</div>
 <div class="string set-string"></div>
 <section class="sec_02">
 <p class="sec_02-title">Список офисов/отделов</p>
@@ -81,40 +37,136 @@
     <li><div class="group">Склад</div>
     <div class="switcher"><div class="switch"></div></div><a href="#" class="edit">Редактировать</a><a href="#" class="del">Удалить</a></li>
 </ul>
-<div class="sec_02-btn">Добавить</div>
+<div class="btn_addemail sec_02-btn">Добавить</div>
  <div class="modal_underlay"></div>
- <div class="modal_addgroup">
-                                <span class="modal_close">ˣ</span>
-                                <p>Введите название офиса/отдела</p>
-                                <input type="text" name="from" class='validate_input-group'>
-                                <button type="button" class="modal_btn-addgroup">Добавить</button>
-                            </div>
-<div class="string set-string"></div>
+ <div class="modal modal_addgroup">
+    <span class="modal_close">ˣ</span>
+    <p>Введите название офиса/отдела</p>
+    <input type="text" name="from" class='validate_input-group'>
+    <button type="button" class="modal_btn-addgroup">Добавить</button>
+</div>
+<div class="string set-string-02"></div>
 </section>
-
- </div>
- </div>
- </div>
-<!-- Footer -->
-<footer>
-    <div class="wrapper">
-        <div class="col_footer_01">
-            <div class="contacts">
-                <div class="tel"><b>8 (078) 654-45-45</b></div>
-                <div class="email"> +1dialog@up.ua</div>
-            </div>
-              <address>г. Беларусь Ул. <br> <b>Первомайская 6/8</b></addres>
-        </div>
-        <div class="col_footer_02">
-            <span><b>+</b>1Dialog </span><img src="img/logo.png" alt="" class = "logo_footer_img">
-        </div>
+<section class="sec-03">
+    <div class="office_name">
+        <input type="text" name="from" class='input_nameof' placeholder="Название оффиса">
+        <p>Эта информация будет отображена на мобильном телефоне поситителя сайта</p>
     </div>
-</footer>
-<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" scr="jquery.pjax.js"></script>
-<!-- конец footer'a -->
- </body>
-</html>
+    <div class="widget_name">
+        <input type="text" name="from" class='input_nameof' placeholder="Название виджета">
+        <div class="check_view">
+            <input type="checkbox" checked=""><button class="radio"></button>
+            <p>Отображать виджет на всех страницах</p></div>
+            <div class="check_view">
+                <input type="checkbox" checked=""><button class="radio"></button>
+                <p>Отображать виджет только в этом разделе</p></div>
+                <div class="check_view">
+                    <input type="checkbox" checked=""><button class="radio"></button>
+                    <p>Отображать виджет на этой странице</p></div>
+                </div>
+                <div class="string set-string-03"></div>
+</section>
+<section class="sec-04">
+    <p>Номер для приема звонков</p>
+    <div class="typeof select"><span class='drop_list_close'>Телефон</span>
+            <ul class="drop-01 drop_list">
+                <li class="chosen">Телефон</li>
+                <li>Skype</li>
+            </ul>
+        <img src="img/adu.png" class="drop_listbtn-01">
+    </div>
+    <div class="typeof select"><span class='drop_list_close'>Россия</span>
+           <ul class="drop-01 drop_list">
+            <li class="chosen">Россия</li>
+            <li>Узбекистан</li>
+        </ul>
+        <img src="img/adu.png" class="drop_listbtn-02">
+    </div>
+    <input type="tel" name="from" class="typeof" placeholder="+7 (___)___-__-__"></input>
+    <div class="sec-04-rad">
+        <input type="checkbox" checked=""><button class="sec-04-rad-btn"></button>
+        <span>Активен</span>
+    </div>
+    <div class="string set-string-04"></div>
+</section>
+<section class="sec-05">
+<p class="sec-05-p">График отдела продаж</p>
+<div class="sec-05-col01">
+<p class="sec-05-p-01">Утвердите график работы вашего отдела продаж</p>
+<p class="sec-05-p-02">Укажите телефон для звонков вне рабочее время</p>
+</div>
+<div class="sec-05-col02">
+<input type="checkbox" checked="" class="btn-hidden"><button class="sec-04-rad-btn"></button><p class="typeofdays">Будни</p>
+<p class="from">C</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>7:00</span>
+         <ul class="drop-01 drop_list">
+            <li class="chosen">7:00</li>
+            <li>8:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col01img">
+    </div>
+<p class="to">До</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>19:00</span>
+           <ul class="drop-01 drop_list">
+            <li class="chosen">19:00</li>
+            <li>20:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col02img">
+    </div>
+    <input type="tel" name="from" class="typeof typeof-tel" placeholder="+7 (___)___-__-__"></input>
+</div>
+<div class="sec-05-col03">
+<input type="checkbox" checked="" class="btn-hidden"><button class="sec-04-rad-btn"></button><p class="typeofdays">Суббота</p>
+<p class="from">C</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>7:00</span>
+           <ul class="drop-01 drop_list">
+            <li class="chosen">7:00</li>
+            <li>8:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col03img">
+    </div>
+<p class="to">До</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>19:00</span>
+           <ul class="drop-01 drop_list">
+            <li class="chosen">19:00</li>
+            <li>20:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col04img">
+    </div>
+    <input type="tel" name="from" class="typeof typeof-tel" placeholder="+7 (___)___-__-__"></input>
+</div>
+<div class="sec-05-col04">
+<input type="checkbox" checked="" class="btn-hidden"><button class="sec-04-rad-btn"></button><p class="typeofdays">Воскресенье</p>
+<p class="from">C</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>7:00</span>
+           <ul class="drop-01 drop_list">
+            <li class="chosen">7:00</li>
+            <li>8:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col05img">
+    </div>
+<p class="to">До</p>
+<div class="typeof sec01typeof select"><span class='drop_list_close'>19:00</span>
+        <ul class="drop-01 drop_list">
+            <li class="chosen">19:00</li>
+            <li>20:00</li>
+        </ul>
+        <img src="img/adu.png" class="sec-05-img col06img">
+    </div>
+    <input type="tel" name="from" class="typeof typeof-tel" placeholder="+7 (___)___-__-__"></input>
+</div>
+</section>
+<div class="string set-string-05"></div>
+<section class="sec-06">
+<div>Адрес</div>
+<p>Эта информация будет видна посетителем вашего сайта с мобильного</p>
+    <input type="text" name="from" class="input_nameof" placeholder="Адрес оффиса/отдела">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15997.644921180627!2d30.3082106!3d59.920432899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1477509666973" width="256" height="256" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="sec_06-btn">Сохранить и далее</div>
+</section>
+     </div>
+   </div>
+
+
+
+
